@@ -160,6 +160,7 @@ public class SystemWebViewEngine implements CordovaWebViewEngine {
          * For existing functionality, this setting is set to true. In a future release, this should be defaulted to false.
          */
         settings.setAllowFileAccess(true);
+        settings.setAllowUniversalAccessFromFileURLs(true);
 
         String manufacturer = android.os.Build.MANUFACTURER;
         LOG.d(TAG, "CordovaWebView is running on device made by: " + manufacturer);
