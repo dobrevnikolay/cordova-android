@@ -159,7 +159,9 @@ public class SystemWebViewEngine implements CordovaWebViewEngine {
          * It is recommended to turn off this settings To prevent possible security issues targeting Build.VERSION_CODES.Q and earlier.
          * For existing functionality, this setting is set to true. In a future release, this should be defaulted to false.
          */
+
         settings.setAllowFileAccess(true);
+        settings.setAllowContentAccess(true);
         settings.setAllowUniversalAccessFromFileURLs(true);
 
         String manufacturer = android.os.Build.MANUFACTURER;
